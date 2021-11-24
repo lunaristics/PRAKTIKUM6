@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main > aside {
+    flex: 0 0 20vw;
+    background: lightpink;
+}
+
+#main > aside {
+    order: -1;
+}
+
+header, footer {
+    background: green;
+    height: 20vh;
+}
+
+header, footer, .article, aside {
+    padding: 1em;
+}
+
+#main > .article > p {
+    text-align: center;
+}

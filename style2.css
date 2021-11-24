@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+
+#column1 {
+    background: lightblue;
+    flex: 1;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content > article {
+    flex: 3;
+    min-height: 60vh;
+}
+
+.content > aside {
+    background: pink;
+    flex: 1;
+}
+
+header, footer {
+    background: lightsalmon;
+    height: 20vh;
+}
+
+header, footer, article, nav, aside {
+    padding: 1em;
+}
